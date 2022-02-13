@@ -1,9 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const array: Array<number> = [1, 2, 3];
-const readonlyArray: ReadonlyArray<number> = [1, 2, 3];
-array[0] = 11;
-
 const Counter: React.FC<{}> = () => {
   const initialValue: any = 0;
   const [value, setValue] = useState<number>(initialValue);
